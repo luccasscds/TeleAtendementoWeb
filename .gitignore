@@ -1,0 +1,5 @@
+﻿.vs/
+.vscode/
+bin/
+packages/
+node_modules/

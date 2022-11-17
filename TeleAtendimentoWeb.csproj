@@ -83,6 +83,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="assets\css\index.css" />
     <Content Include="assets\images\icon-circle-plus.svg" />
     <Content Include="assets\images\icon-edit.svg" />
@@ -141,7 +142,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Modules\" />
   </ItemGroup>
