@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Web;
 using System.Diagnostics;
+using System.IO;
 
 namespace TeleAtendimentoWeb
 {
@@ -14,11 +15,13 @@ namespace TeleAtendimentoWeb
     */
     class PessoaDAO
     {
+        private static readonly String DB_NAME = "db_teleAtendimento.db";
+        private static readonly String DB_PATH = AppContext.BaseDirectory+"\\db\\"+DB_NAME;
         private static SQLiteConnection connection;
 
         protected static SQLiteConnection ConnectDB()
         {
-            connection = new SQLiteConnection(@"Data Source=C:\\Users\\Lucas\\source\\repos\\TeleAtendimentoWeb\\db\\db_teleAtendimento.db");
+            connection = new SQLiteConnection(@"Data Source="+DB_PATH);
             connection.Open();
             return connection;
         }
