@@ -3,4 +3,5 @@
 bin/
 packages/
 node_modules/
+obj/
 //*.user
